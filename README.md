@@ -12,6 +12,30 @@ Documentation of Snapchat's Private API
 
 ###### Response
   ![Snaptag](https://lh6.googleusercontent.com/X9ROX2BkYbyBF2xI889T3YGTCC2PD17M5I4wOVRC8rlnvBSMn58r8k_wxXxKQr_s3WodaZLqwdU=w1342-h523)
+  
+## /bq/snaptag (POST)
+###### Request
+```json
+  {"snaptag": "6BA8BCC94BEAB846813625522C7E3D2F",
+  "req_token": "3a897d9eed9139d547384e3be5f89cd4ccf040fb7b11ad9aa9950ea3404a483a",
+  "timestamp": 1422412632422,
+  "username": "neuegram"}
+```
+
+###### Response
+```json
+  {"message": "neuegram is already your friend! 🙈",
+  "action": "add_friend",
+  "friend_action_status": "already_friend",
+  "object":
+    {"can_see_custom_stories": true,
+    "direction": "OUTGOING",
+    "name": "neuegram",
+    "display": "Graham Smith",
+    "type": 0},
+  "logged": true,
+  "fallback_message": "neuegram is already your friend! 🙈"}
+```
 
 ## /discover/channel_list?region={country_code} (GET)
 ###### Response
